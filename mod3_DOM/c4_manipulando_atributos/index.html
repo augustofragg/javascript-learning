@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1>Olá javascript</h1>
+
+    <h1>Outro titulo</h1>
+
+    <ul id="mylist">
+        <li>Cafe</li>
+        <li>Farinha</li>
+        <li>Açucar</li>
+    </ul>
+
+    <label for="password">Senha</label><br />
+    <input type="password" name="senha" id="password" value="" />
+
+
+    <button class="botao" onclick="clicou()">Clicar em mim</button>
+
+    <script>
+        function clicou() {
+            const input = document.querySelector("input");
+            const botao = document.querySelector("button");
+
+            if (input.getAttribute('type') === 'password') {
+                input.setAttribute('type', 'text');
+                botao.innerText = "Ocultar Senha";
+            } else {
+                input.setAttribute('type', 'password');
+                botao.innerText = "Mostrar Senha";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
