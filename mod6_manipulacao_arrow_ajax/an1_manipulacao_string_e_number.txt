@@ -1,0 +1,35 @@
+//Manipulação de string 
+
+String.length
+
+String.indexOf()
+
+String.slice()
+
+String.subString()
+
+String.substr() -> metodo deprecidado;
+
+String.replace()
+
+String.toUpperCase()
+
+String.toLoweCase()
+
+String.concat()
+
+String.trim()
+
+String.charAt()
+
+String.split()
+
+//Manipulação de tipo number
+
+number.toString()
+
+number.toFixerd()
+
+parseInt("String") -> integer
+
+parseFloat("String") -> Float

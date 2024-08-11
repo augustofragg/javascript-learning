@@ -35,6 +35,10 @@ async function newPost(title,body) {
             })
         }
     );
+
+    document.querySelector('#title').value = ' ';
+    document.querySelector('#textArea').value = ' ';
+
     readPost();
 }
 
