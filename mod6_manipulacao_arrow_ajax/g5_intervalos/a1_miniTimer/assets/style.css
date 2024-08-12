@@ -1,0 +1,15 @@
+fieldset {
+    display:block;
+}
+
+
+.form-input {
+    width: 20%;
+    margin: 2px;
+    box-sizing: border-box;
+    border: #ccc 1px solid;
+}
+
+.newPostStyle {
+    margin:2px;
+}

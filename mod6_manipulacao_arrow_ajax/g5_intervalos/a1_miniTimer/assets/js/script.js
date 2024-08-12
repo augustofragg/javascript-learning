@@ -2,6 +2,19 @@ let timeBody = document.querySelector('.timer');
 
 let timer;
 
+let timerb;
+
+function timerOut() {
+    timerb = setTimeout(function() {
+        document.querySelector(".textbody")
+            .innerHTML += "Rodou !";
+    },2000);
+}
+
+function timerOutStop() {
+    clearTimeout(timerb);
+}
+
 
 function timerStart() {
     timer = setInterval(showTime,1000);
@@ -32,3 +45,9 @@ document.querySelector("#stop")
         timerStop();
         timeBody.innerHTML = "00:00:00";
     });
+
+document.querySelector('#load')
+    .addEventListener('click',timerOut);
+
+document.querySelector('#loadStop')
+    .addEventListener('click',timerOutStop);
